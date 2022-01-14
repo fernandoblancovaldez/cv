@@ -1,0 +1,105 @@
+{
+  "profile": [
+    {
+      "id": 1,
+      "photo": "./app/assets/profile.jpg",
+      "name": "Fernando Blanco",
+      "job-title-alleged": "Frontend Web Developer",
+      "email": {
+        "ico": "far fa-envelope",
+        "text": "fernandoblancovaldez@gmail.com"
+      },
+      "address": {
+        "country": "Argentina",
+        "city": "Gonzalez Catan, G B A",
+        "ico": "fas fa-map-marker-alt",
+        "province": "Buenos Aires",
+        "zipcode": "1759"
+      },
+      "phone": { "ico": "fas fa-mobile-alt", "number": "+54 9 11 24561194" },
+      "github": { "ico": "fab fa-github", "account": "https://github.com/fernandoblancovaldez" },
+      "linkedin": {
+        "ico": "fab fa-linkedin",
+        "account": "https://www.linkedin.com/in/fernando-blanco-web/"
+      },
+      "introduction": " <hr><p><b>Profesional independiente, proactivo y autodidacta</b> que se desenvuelve en el área de desarrollo web.<br/><br/><em>Busco continuamente incorporar nuevas tecnologías que nos permitan al equipo y a mi optimizar el trabajo del día a día.</em><br/><br/><b><em>A continuación ofrezco los proyectos en los que estuve trabajando hasta el momento</em></b></p><hr>"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "\n<b>Single Page Application</b>\n",
+      "content": "\nSPA <em>modularizada</em> consumiendo la API de <em>Wordpress</em> con <em>buscador</em>, <em>formulario de contacto</em> y <em>scroll infinito</em>.\n",
+      "tech": [
+        { "src": "./app/assets/html.svg", "name": "html" },
+        { "src": "./app/assets/css.svg", "name": "css" },
+        { "src": "./app/assets/javascript.svg", "name": "javascript" },
+        { "src": "./app/assets/wordpress.svg", "name": "wordpress" },
+        { "src": "./app/assets/form-submit.png", "name": "formsubmit" }
+      ],
+      "url": "./app/assets/projects/spa"
+    },
+    {
+      "id": 2,
+      "title": "\n<b>Checkout con Stripe</b>\n",
+      "content": "\nSitio de compras accediendo a la API de <em>Stripe</em> para pagos digitales. Se usó <em>Fetch</em> y <em>CSS Flex-Box</em> para hacer lo responsive sin <em>media queries</em>.\n",
+      "tech": [
+        { "src": "./app/assets/html.svg", "name": "html" },
+        { "src": "./app/assets/css.svg", "name": "css" },
+        { "src": "./app/assets/javascript.svg", "name": "javascript" },
+        { "src": "./app/assets/stripe.svg", "name": "stripe" }
+      ],
+      "url": "./app/assets/projects/checkout"
+    },
+    {
+      "id": 3,
+      "title": "\n<b>Uploader Drag & Drop</b>\n",
+      "content": "\nSection que permite subir archivos al servidor usando <em>XMLHttpRequest</em> y <em>PHP</em>.\n",
+      "tech": [
+        { "src": "./app/assets/css.svg", "name": "css" },
+        { "src": "./app/assets/javascript.svg", "name": "javascript" },
+        { "src": "./app/assets/php.svg", "name": "php" }
+      ],
+      "url": "./app/assets/projects/uploader"
+    },
+    {
+      "id": 4,
+      "title": "\n<b>Buscador de Canciones</b>\n",
+      "content": "\nBuscador que combina dos APIs para traer informacion del artista y la letra de las canciones usando <em>funciones asíncronas</em> y <em>Fetch</em>.\n",
+      "tech": [
+        { "src": "./app/assets/html.svg", "name": "html" },
+        { "src": "./app/assets/css.svg", "name": "css" },
+        { "src": "./app/assets/javascript.svg", "name": "javascript" },
+        { "src": "./app/assets/the-audio-db.png", "name": "theaudiodb" }
+      ],
+      "url": "./app/assets/projects/canciones"
+    },
+    {
+      "id": 5,
+      "title": "\n<b>Buscador de Series</b>\n",
+      "content": "\nBuscador que usa la API de <em>TV Maze</em> para traer informacion de series usando <em>funciones asíncronas</em>, <em>Fetch</em> y <em>CSS Grid</em> para hacerlo responsive sin <em>media queries</em>.\n",
+      "tech": [
+        { "src": "./app/assets/html.svg", "name": "html" },
+        { "src": "./app/assets/css.svg", "name": "css" },
+        { "src": "./app/assets/javascript.svg", "name": "javascript" },
+        { "src": "./app/assets/tvm.png", "name": "tvmaze" }
+      ],
+      "url": "./app/assets/projects/series"
+    },
+    {
+      "id": 6,
+      "title": "\n<b>Selector de Localidades</b>\n",
+      "content": "\nUsando etiquetas <em>select</em> y la API pública del gobierno <em>Georef</em>, se crearon 2 niveles de anidamientos para acceder a las Provincias, luego a los Departamentos y finalmente a las Localidades.\n",
+      "tech": [
+        { "src": "./app/assets/javascript.svg", "name": "javascript" },
+        { "src": "./app/assets/georef.svg", "name": "georef" }
+      ],
+      "url": "./app/assets/projects/selectLocalidades"
+    }
+  ],
+  "lang": "\n<p>Hablo Español <b>Nativo</b> e Ingles <b>Avanzado</b></p>\n",
+  "schooling": {
+    "title": "\n<b>Técnico en Administracion de Empresas</b>\n",
+    "institute": "\n<p>María de los Remedios Escalada de San Martin</p>\n"
+  }
+}
