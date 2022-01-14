@@ -191,7 +191,6 @@ hr {
 .contact-form {
   --form-ok-color: #2ee59d;
   --form-error-color: #f44336;
-  border-radius: 0 25px 25px 0;
   background-color: #677589;
   color: #fff;
   margin-left: auto;
