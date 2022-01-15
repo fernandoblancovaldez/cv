@@ -10,9 +10,15 @@ const d = document,
     headers: {
       Authorization: `Bearer ${STRIPE_KEYS.secret}`,
     },
-  };
-
+  },
+  $loader = d.createElement("img");
 let products, prices;
+
+$loader.classList.add("loader");
+$loader.src = "./assets/loader.svg";
+$loader.alt = "Cargando ..";
+
+$tacos.appendChild($loader);
 
 const moneyFormat = (num) => `$${num.slice(0, -2)}.${num.slice(-2)}`;
 
@@ -42,6 +48,7 @@ Promise.all([
       let $clone = d.importNode($template, true);
       $fragment.appendChild($clone);
     });
+    $tacos.removeChild($loader);
     $tacos.appendChild($fragment);
   })
   .catch((err) => {
