@@ -73,7 +73,7 @@
                 .then(res => res.ok ? res.json() : Promise.reject(res))
                 .then(json => {
                     const localidades = json.localidades.map(({ nombre }) => nombre).sort();
-                    //console.log(localidades)
+                    console.log(localidades)
                     let $options = `<option value="">Elige una Localidad</option>`;
                     localidades.forEach(localidad => $options += `<option value="${localidad}">${localidad}</option>`)
                     $selectLocality.innerHTML = $options
