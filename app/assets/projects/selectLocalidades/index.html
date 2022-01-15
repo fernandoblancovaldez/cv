@@ -35,9 +35,12 @@
             fetch("https://apis.datos.gob.ar/georef/api/provincias")
                 .then(res => res.ok ? res.json() : Promise.reject(res))
                 .then(json => {
-                    //console.log(json)
+                    //console.log(json.provincias)
+                    const provincias = json.provincias.map(({ nombre }) => nombre).sort();
+                    //console.log(provincias)                
                     let $options = `<option value="">Elige una Provincia</option>`;
-                    json.provincias.forEach(el => $options += `<option value="${el.nombre}">${el.nombre}</option>`)
+
+                    provincias.forEach(provincia => $options += `<option value="${provincia}">${provincia}</option>`)
                     $selectProvince.innerHTML = $options
                 })
                 .catch(err => {
@@ -52,8 +55,10 @@
                 .then(res => res.ok ? res.json() : Promise.reject(res))
                 .then(json => {
                     //console.log(json)
+                    const departamentos = json.departamentos.map(({ nombre }) => nombre).sort();
+                    //console.log(departamentos)
                     let $options = `<option value="">Elige un Departamento</option>`;
-                    json.departamentos.forEach(el => $options += `<option value="${el.nombre}">${el.nombre}</option>`)
+                    departamentos.forEach(departamento => $options += `<option value="${departamento}">${departamento}</option>`)
                     $selectDepartment.innerHTML = $options
                 })
                 .catch(err => {
@@ -67,9 +72,10 @@
             fetch(`https://apis.datos.gob.ar/georef/api/localidades?departamento=${department}&max=1000`)
                 .then(res => res.ok ? res.json() : Promise.reject(res))
                 .then(json => {
-                    //console.log(json)
+                    const localidades = json.localidades.map(({ nombre }) => nombre).sort();
+                    //console.log(localidades)
                     let $options = `<option value="">Elige una Localidad</option>`;
-                    json.localidades.forEach(el => $options += `<option value="${el.nombre}">${el.nombre}</option>`)
+                    localidades.forEach(localidad => $options += `<option value="${localidad}">${localidad}</option>`)
                     $selectLocality.innerHTML = $options
                 })
                 .catch(err => {
